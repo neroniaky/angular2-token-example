@@ -21,7 +21,7 @@ You can find a running example [here](https://angular2-token.herokuapp.com/).
     git clone https://github.com/neroniaky/angular2-token-example.git
     ```
 
-2. Move to main the folder and install gem dependencies
+2. Move to the directory and install gem dependencies
     ```bash
     cd angular2-token-example
     bundle install
@@ -32,13 +32,7 @@ You can find a running example [here](https://angular2-token.herokuapp.com/).
     rails db:migrate
     ```
 
-4. Move to the main directory and install Rails dependencies
-    ```bash
-    cd angular2-token-example
-    bundle install
-    ```
-
-5. Move to the angular2-client directory and install Angular2 dependencies
+4. Move to the angular2-client directory and install Angular2 dependencies
     ```bash
     cd angular2-client
     npm install
@@ -48,7 +42,7 @@ You can find a running example [here](https://angular2-token.herokuapp.com/).
 
 1. Run the rails server in the main directory with
     ```bash
-    rails s
+    rails server
     ```
 
 2. Open a second terminal and run the npm server in the angular2-client directory with
@@ -59,4 +53,4 @@ You can find a running example [here](https://angular2-token.herokuapp.com/).
 3. Open [http://localhost:3001/](http://localhost:3001/) in your browser
 
 ## License
-The MIT License (see the [LICENSE](https://github.com/neroniaky/angular2-token/blob/master/LICENSE) file for the full text)
+The MIT License (see the [LICENSE](https://github.com/neroniaky/angular2-token-example/blob/master/LICENSE) file for the full text)
