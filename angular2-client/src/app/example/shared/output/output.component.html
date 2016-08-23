@@ -1,0 +1,15 @@
+<div class="card card-block">
+    <h4 class="card-title">Response</h4>
+    <p>
+        <b>Status:</b>
+        <code>{{_output?.status}}</code>
+    </p>
+    <p *ngIf="_output?.data != null">
+        <b>Data:</b>
+        <code>{{_output?.data | json}}</code>
+    <p>
+    <p *ngFor="let error of _output?.errors; let i = index">
+        <b>Error {{i + 1}}:</b>
+        <code>{{error}}</code>
+    </p>
+</div>

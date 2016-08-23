@@ -1,0 +1,52 @@
+{
+  "name": "angular2-token-example",
+  "version": "0.0.1",
+  "description": "An example for Angular2-Token",
+  "scripts": {
+    "rimraf": "rimraf",
+    "postinstall": "npm run typings-install",
+    "typings-install": "typings install",
+    "prebuild": "npm run rimraf -- ../public",
+    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
+    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached  --content-base src",
+    "start": "npm run server"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "angular2-template-loader": "^0.4.0",
+    "awesome-typescript-loader": "^1.1.1",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.0",
+    "to-string-loader": "^1.1.4",
+    "typescript": "~1.8.9",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-merge": "^0.8.4"
+  },
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/forms": "0.3.0",
+    "@angular/http": "2.0.0-rc.5",
+    "@angular/platform-browser": "2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.5",
+    "@angular/platform-server": "2.0.0-rc.5",
+    "@angular/router": "3.0.0-rc.1",
+    "angular2-token": "^0.1.1",
+    "bootstrap": "^4.0.0-alpha.3",
+    "core-js": "^2.2.0",
+    "ie-shim": "^0.1.0",
+    "rimraf": "^2.5.4",
+    "rxjs": "5.0.0-beta.6",
+    "typescript": "^1.9.0-dev",
+    "zone.js": "~0.6.12"
+  },
+  "keywords": [
+    "Angular2-Token",
+    "Example"
+  ]
+}
