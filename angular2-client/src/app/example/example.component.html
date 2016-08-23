@@ -1,0 +1,66 @@
+<div class="header">
+    <div class="container">
+
+        <h1 class="display-4">Angular2-Token</h1>
+
+        <p>
+            This is an example for Angular2-Token. Angular2-Token is a token based authentication service for Angular2 with multiple user support. It works best with the devise token auth gem for Rails.
+        </p>
+
+        <a href="https://github.com/neroniaky/angular2-token">
+            <button type="button" class="btn btn-secondary">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                Github
+            </button>
+        </a>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-block card-success card-inverse">
+                <h4 class="card-title">Current User Status</h4>
+
+                <div class="row current-user">
+                    <div class="col-md-4">
+                        <p><b>Signed In?</b> {{_tokenService.currentUserData != null}} </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><b>Email:</b> {{_tokenService.currentUserData?.email}} </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><b>UserType:</b> {{_tokenService.currentUser}} </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <register></register>
+    </div>
+
+    <div class="row">
+        <sign-in></sign-in>
+    </div>
+
+    <div class="row">
+        <access-resource></access-resource>
+    </div>
+
+    <div class="row">
+        <change-password></change-password>
+    </div>
+
+    <div class="row">
+        <validate-token></validate-token>
+    </div>
+
+    <div class="row">
+        <sign-out></sign-out>
+    </div>
+</div>

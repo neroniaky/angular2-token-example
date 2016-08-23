@@ -1,0 +1,29 @@
+.current-user {
+    color: white;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.header {
+    background-color: #eee;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+
+    .imprint:hover {
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

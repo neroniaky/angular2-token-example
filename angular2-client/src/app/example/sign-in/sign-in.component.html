@@ -1,0 +1,34 @@
+<div class="col-md-6">
+	<div class="card card-block">
+		<h4 class="card-title">Sign In</h4>
+
+		<form #signInForm="ngForm" (ngSubmit)="onSubmit()">
+			<div class="form-group">
+				<label for="formGroupExampleInput">Email</label>
+				<input type="text"
+					class="form-control"
+					placeholder="Email"
+					required
+					[(ngModel)]="_authData.email"
+					name="email">
+			</div>
+			<div class="form-group">
+				<label for="formGroupExampleInput">Password</label>
+				<input type="password"
+					class="form-control"
+					placeholder="Password"
+					required
+					[(ngModel)]="_authData.password"
+					name="password">
+			</div>
+			<button
+				type="submit"
+				class="btn btn-primary"
+				[disabled]="!signInForm.form.valid">Sign In</button>
+		</form>
+
+	</div>
+</div>
+<div class="col-md-6">
+	<output [data]="_output"></output>
+</div>
