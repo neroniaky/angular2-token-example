@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'omniauth'
 gem 'devise_token_auth'
+gem 'omniauth-github'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
