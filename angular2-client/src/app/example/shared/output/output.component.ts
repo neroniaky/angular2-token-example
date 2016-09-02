@@ -18,7 +18,6 @@ export class OutputComponent {
         this._output = <AuthResponse>{};
 
         if (res != null) {
-            console.log(res);
             this._output.status = res.statusText + ' (' + res.status + ')';
 
             if (res.json().errors != null)
