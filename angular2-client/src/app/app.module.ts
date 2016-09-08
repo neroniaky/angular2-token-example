@@ -5,9 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { Angular2TokenService } from 'angular2-token';
 
+import {AuthGuard} from './guard.service';
+
+
 import {
     AppComponent,
     ExampleModule,
+    RestrictedModule,
     routes
 } from './';
 
@@ -16,11 +20,14 @@ import {
         routes,
         BrowserModule,
         HttpModule,
-        ExampleModule
+        ExampleModule,
+        RestrictedModule
+    ],
+    providers: [
+        Angular2TokenService,
+        AuthGuard
     ],
     declarations: [ AppComponent ],
     bootstrap: [ AppComponent ]
 })
-export class AppModule {
-
-}
+export class AppModule { }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { Angular2TokenService } from 'angular2-token';
 
@@ -21,7 +22,7 @@ import {
     imports: [
         CommonModule,
         FormsModule,
-        HttpModule
+        RouterModule
     ],
     declarations: [
         ExampleComponent,
@@ -35,9 +36,6 @@ import {
         SignOutComponent,
         AccessResourceComponent,
         ValidateTokenComponent
-    ],
-    providers: [
-        Angular2TokenService
     ],
     exports: [
         ExampleComponent
