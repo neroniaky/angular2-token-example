@@ -5,9 +5,6 @@ import { HttpModule } from '@angular/http';
 
 import { Angular2TokenService } from 'angular2-token';
 
-import {AuthGuard} from './guard.service';
-
-
 import {
     AppComponent,
     ExampleModule,
@@ -24,8 +21,7 @@ import {
         RestrictedModule
     ],
     providers: [
-        Angular2TokenService,
-        AuthGuard
+        Angular2TokenService
     ],
     declarations: [ AppComponent ],
     bootstrap: [ AppComponent ]
