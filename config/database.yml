@@ -6,8 +6,8 @@ default: &default
 
 development:
   <<: *default
-  username: postgres
-  password: postgres
+  username: comebis
+  # password: postgres
   database: angular2_token_example_development
 
 # Warning: The database defined as "test" will be erased and
@@ -15,7 +15,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  username: postgres
+  username: comebis
   password: postgres
   database: angular2_token_example_test
 
