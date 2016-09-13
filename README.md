@@ -12,8 +12,14 @@ Angular2-Token is currently in Alpha. Any contribution is much appreciated.
 You can find a running example [here](https://angular2-token.herokuapp.com/).
 
 ## Content
+- [Requirements](#requirements)
 - [Installation](#installation)
 - [License](#license)
+
+## Requirements
+
+- NodeJs >= 6.3.1
+- Ruby >= 2.2.2
 
 ## Installation
 1. Clone this repository with
