@@ -4,10 +4,9 @@
   "description": "An example for Angular2-Token",
   "license": "MIT",
   "author": "Jan-Philipp Riethmacher <neroniaky@gmail.com>",
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "git+https://github.com/neroniaky/angular2-token-example.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neroniaky/angular2-token-example.git"
   },
   "bugs": {
     "url": "https://github.com/neroniaky/angular2-token-example/issues"
@@ -15,14 +14,15 @@
   "homepage": "https://github.com/neroniaky/angular2-token-example#readme",
   "scripts": {
     "rimraf": "rimraf",
-    "postinstall": "npm run typings-install",
-    "typings-install": "typings install",
     "prebuild": "npm run rimraf -- ../public",
     "build": "webpack --inline --colors --progress --display-error-details --display-cached",
     "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached  --content-base src",
     "start": "npm run server"
   },
   "devDependencies": {
+    "@types/core-js": "^0.9.32",
+    "@types/node": "^6.0.38",
+
     "angular2-template-loader": "^0.4.0",
     "awesome-typescript-loader": "^1.1.1",
     "css-loader": "^0.23.1",
@@ -38,15 +38,15 @@
     "webpack-merge": "^0.8.4"
   },
   "dependencies": {
-    "@angular/common": "2.0.0-rc.7",
-    "@angular/compiler": "2.0.0-rc.7",
-    "@angular/core": "2.0.0-rc.7",
-    "@angular/forms": "2.0.0-rc.7",
-    "@angular/http": "2.0.0-rc.7",
-    "@angular/platform-browser": "2.0.0-rc.7",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.7",
-    "@angular/router": "3.0.0-rc.3",
-
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@angular/router": "3.0.0",
+    
     "angular2-token": "^0.1.4",
     "bootstrap": "^4.0.0-alpha.3",
     "core-js": "^2.4.1",
@@ -54,7 +54,7 @@
     "rimraf": "^2.5.4",
     "rxjs": "5.0.0-beta.12",
     "typescript": "^2.0.0",
-    "zone.js": "0.6.21"
+    "zone.js": "0.6.23"
   },
   "keywords": [
     "Angular2-Token",
