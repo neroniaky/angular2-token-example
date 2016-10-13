@@ -44,7 +44,8 @@ You can find a running example [here](https://angular2-token.herokuapp.com/).
     ```bash
     rails server
     ```
-2. Open [http://localhost:3001/](http://localhost:3001/) in your browser
+
+2. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## License
 The MIT License (see the [LICENSE](https://github.com/neroniaky/angular2-token-example/blob/master/LICENSE) file for the full text)
