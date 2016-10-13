@@ -18,6 +18,6 @@
 
 # Ignore Angular-Client
 angular2-client/node_modules
-angular2-client/typings
+angular2-client/npm-debug.log
 
 db/*.sqlite3
