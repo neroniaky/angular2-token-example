@@ -38,6 +38,11 @@ You can find a running example [here](https://angular2-token.herokuapp.com/).
     rails db:migrate
     ```
 
+4. Install angular2 client
+    ```bash
+    npm run postinstall
+    ```
+
 ## Run the app
 
 1. Run the rails server in the main directory with
