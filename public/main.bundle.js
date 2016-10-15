@@ -5093,6 +5093,9 @@ webpackJsonp([2],{
 	        if (oAuthType == 'github') {
 	            oAuthPath = this._options.oAuthPaths.github;
 	        }
+	        oAuthPath = oAuthPath +
+	            '?auth_origin_url=' + encodeURIComponent(window.location.href) +
+	            "&omniauth_window_type=newWindow";
 	        window.open(this._constructUserPath() + oAuthPath);
 	    };
 	    // Sign out request and delete storage

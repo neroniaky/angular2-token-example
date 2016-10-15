@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "postinstall": "cd angular2-client && npm install && npm run build"
+    }
+}
