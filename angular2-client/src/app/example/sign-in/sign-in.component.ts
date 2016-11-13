@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Angular2TokenService } from 'angular2-token';
-
-import { AuthData } from '../';
+import { Angular2TokenService, SignInData } from 'angular2-token';
 
 @Component({
     selector: 'sign-in',
@@ -10,7 +7,7 @@ import { AuthData } from '../';
 })
 export class SignInComponent {
 
-    private _authData: AuthData = <AuthData>{};
+    private _signInData: SignInData = <SignInData>{};
     private _output: any;
 
     constructor(private _tokenService: Angular2TokenService) { }
@@ -20,16 +17,13 @@ export class SignInComponent {
 
         this._output = null;
 
-        this._tokenService.signIn(
-            this._authData.email,
-            this._authData.password
-        ).subscribe(
+        this._tokenService.signIn(this._signInData).subscribe(
             res => {
-                this._authData  = <AuthData>{};
-                this._output    = res;
+                this._signInData    = <SignInData>{};
+                this._output        = res;
             }, error => {
-                this._authData  = <AuthData>{};
-                this._output    = error;
+                this._signInData    = <SignInData>{};
+                this._output        = error;
             }
         );
     }

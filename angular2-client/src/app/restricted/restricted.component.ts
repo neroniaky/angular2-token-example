@@ -6,6 +6,4 @@ import { Angular2TokenService } from 'angular2-token';
     selector: 'restricted',
     templateUrl: 'restricted.component.html'
 })
-export class RestrictedComponent {
-    constructor(private _tokenService: Angular2TokenService) { }
-}
+export class RestrictedComponent { }

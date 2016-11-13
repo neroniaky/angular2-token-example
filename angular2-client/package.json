@@ -47,7 +47,7 @@
     "@angular/platform-browser-dynamic": "2.0.0",
     "@angular/router": "3.0.0",
     
-    "angular2-token": "^0.1.4",
+    "angular2-token": "0.2.0-beta.1",
     "bootstrap": "^4.0.0-alpha.3",
     "core-js": "^2.4.1",
     "ie-shim": "^0.1.0",

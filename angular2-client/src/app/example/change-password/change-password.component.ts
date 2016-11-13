@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Angular2TokenService } from 'angular2-token';
-
-import { AuthData } from '../';
+import { Angular2TokenService, UpdatePasswordData } from 'angular2-token';
 
 @Component({
     selector: 'change-password',
@@ -10,7 +8,7 @@ import { AuthData } from '../';
 })
 export class ChangePasswordComponent {
 
-    private _authData: AuthData = <AuthData>{};
+    private _updatePasswordData: UpdatePasswordData = <UpdatePasswordData>{};
     private _output: any;
 
     constructor(private _tokenService: Angular2TokenService) { }
@@ -20,17 +18,13 @@ export class ChangePasswordComponent {
 
         this._output = null;
 
-        this._tokenService.updatePassword(
-            this._authData.password,
-            this._authData.passwordConfirmation,
-            this._authData.currentPassword
-        ).subscribe(
+        this._tokenService.updatePassword(this._updatePasswordData).subscribe(
             res => {
-                this._authData  = <AuthData>{};
-                this._output    = res;
+                this._updatePasswordData    = <UpdatePasswordData>{};
+                this._output                = res;
             }, error => {
-                this._authData  = <AuthData>{};
-                this._output    = error;
+                this._updatePasswordData    = <UpdatePasswordData>{};
+                this._output                = error;
             }
         );
     }

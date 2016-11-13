@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Angular2TokenService } from 'angular2-token';
-
-import { AuthData } from '../';
+import { Angular2TokenService, RegisterData } from 'angular2-token';
 
 @Component({
     selector: 'register',
@@ -11,7 +8,7 @@ import { AuthData } from '../';
 })
 export class RegisterComponent {
 
-    private _authData: AuthData = <AuthData>{};
+    private _registerData: RegisterData = <RegisterData>{};
     private _output: any;
 
     constructor(private _tokenService: Angular2TokenService) { }
@@ -21,17 +18,13 @@ export class RegisterComponent {
 
         this._output = null;
 
-        this._tokenService.registerAccount(
-            this._authData.email,
-            this._authData.password,
-            this._authData.passwordConfirmation
-        ).subscribe(
+        this._tokenService.registerAccount(this._registerData).subscribe(
             res => {
-                this._authData  = <AuthData>{};
-                this._output    = res;
+                this._registerData  = <RegisterData>{};
+                this._output        = res;
             }, error => {
-                this._authData  = <AuthData>{};
-                this._output    = error;
+                this._registerData  = <RegisterData>{};
+                this._output        = error;
             }
         );
     }
