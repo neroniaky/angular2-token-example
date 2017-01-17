@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
-import { Angular2TokenService } from 'angular2-token';
+import { Angular2TokenService, A2tUiModule } from 'angular2-token';
 
 import {
     AppComponent,
@@ -18,7 +18,8 @@ import {
         BrowserModule,
         HttpModule,
         ExampleModule,
-        RestrictedModule
+        RestrictedModule,
+        A2tUiModule
     ],
     providers: [
         Angular2TokenService
