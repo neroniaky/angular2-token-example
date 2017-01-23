@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@types/core-js": "^0.9.35",
-    "@types/node": "^7.0.0",
+    "@types/node": "^7.0.2",
     "angular2-template-loader": "^0.6.0",
     "awesome-typescript-loader": "^3.0.0-beta.18",
     "css-loader": "^0.26.1",
@@ -36,21 +36,21 @@
     "webpack-merge": "^2.4.0"
   },
   "dependencies": {
-    "@angular/common": "^2.4.3",
-    "@angular/compiler": "^2.4.3",
-    "@angular/core": "^2.4.3",
-    "@angular/forms": "^2.4.3",
-    "@angular/http": "^2.4.3",
-    "@angular/platform-browser": "^2.4.3",
-    "@angular/platform-browser-dynamic": "^2.4.3",
-    "@angular/router": "^3.4.3",
+    "@angular/common": "^2.4.4",
+    "@angular/compiler": "^2.4.4",
+    "@angular/core": "^2.4.4",
+    "@angular/forms": "^2.4.4",
+    "@angular/http": "^2.4.4",
+    "@angular/platform-browser": "^2.4.4",
+    "@angular/platform-browser-dynamic": "^2.4.4",
+    "@angular/router": "^3.4.4",
     "angular2-token": "^0.2.0-beta.7",
     "bootstrap": "4.0.0-alpha.5",
     "core-js": "^2.4.1",
     "ie-shim": "^0.1.0",
     "rimraf": "^2.5.4",
     "rxjs": "^5.0.3",
-    "zone.js": "^0.7.5"
+    "zone.js": "^0.7.6"
   },
   "keywords": [
     "Angular2-Token",
