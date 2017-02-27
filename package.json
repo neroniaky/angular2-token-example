@@ -1,5 +1,5 @@
 {
     "scripts": {
-        "postinstall": "cd angular2-client && npm install && npm run build"
+        "postinstall": "rm -rf public && cd angular2-client && yarn install && ng build --prod"
     }
 }

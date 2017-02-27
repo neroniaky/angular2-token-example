@@ -1,59 +1,48 @@
 {
-  "name": "angular2-token-example",
-  "version": "0.0.1",
-  "description": "An example for Angular2-Token",
+  "name": "example",
+  "version": "0.0.0",
   "license": "MIT",
-  "author": "Jan-Philipp Riethmacher <neroniaky@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neroniaky/angular2-token-example.git"
-  },
-  "bugs": {
-    "url": "https://github.com/neroniaky/angular2-token-example/issues"
-  },
-  "homepage": "https://github.com/neroniaky/angular2-token-example#readme",
   "scripts": {
-    "rimraf": "rimraf",
-    "prebuild": "npm run rimraf -- ../public",
-    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
-    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached  --content-base src",
-    "start": "npm run server"
+    "ng": "ng",
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
-  "devDependencies": {
-    "@types/core-js": "^0.9.35",
-    "@types/node": "^7.0.4",
-    "angular2-template-loader": "^0.6.0",
-    "awesome-typescript-loader": "^3.0.0-beta.18",
-    "css-loader": "^0.26.1",
-    "html-webpack-plugin": "^2.28.0",
-    "node-sass": "^4.5.0",
-    "raw-loader": "^0.5.1",
-    "sass-loader": "^4.1.1",
-    "to-string-loader": "^1.1.4",
-    "typescript": "^2.1.5",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.3",
-    "webpack-merge": "^2.6.1"
-  },
+  "private": true,
   "dependencies": {
-    "@angular/common": "^2.4.5",
-    "@angular/compiler": "^2.4.5",
-    "@angular/core": "^2.4.5",
-    "@angular/forms": "^2.4.5",
-    "@angular/http": "^2.4.5",
-    "@angular/platform-browser": "^2.4.5",
-    "@angular/platform-browser-dynamic": "^2.4.5",
-    "@angular/router": "^3.4.5",
-    "angular2-token": "^0.2.0-beta.8",
-    "bootstrap": "4.0.0-alpha.5",
+    "@angular/common": "^2.4.0",
+    "@angular/compiler": "^2.4.0",
+    "@angular/core": "^2.4.0",
+    "@angular/forms": "^2.4.0",
+    "@angular/http": "^2.4.0",
+    "@angular/platform-browser": "^2.4.0",
+    "@angular/platform-browser-dynamic": "^2.4.0",
+    "@angular/router": "^3.4.0",
+    "angular2-token": "^0.2.0-beta.9",
+    "bootstrap": "next",
     "core-js": "^2.4.1",
-    "ie-shim": "^0.1.0",
-    "rimraf": "^2.5.4",
     "rxjs": "^5.1.0",
     "zone.js": "^0.7.6"
   },
-  "keywords": [
-    "Angular2-Token",
-    "Example"
-  ]
+  "devDependencies": {
+    "@angular/cli": "1.0.0-rc.0",
+    "@angular/compiler-cli": "^2.4.0",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~2.0.0",
+    "jasmine-core": "~2.5.2",
+    "jasmine-spec-reporter": "~3.2.0",
+    "karma": "~1.4.1",
+    "karma-chrome-launcher": "~2.0.0",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.1.0",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.4.2",
+    "typescript": "~2.0.0"
+  }
 }
