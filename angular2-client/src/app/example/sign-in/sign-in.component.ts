@@ -7,23 +7,23 @@ import { Angular2TokenService, SignInData } from 'angular2-token';
 })
 export class SignInComponent {
 
-    private _signInData: SignInData = <SignInData>{};
-    private _output: any;
+    signInData: SignInData = <SignInData>{};
+    output: any;
 
     constructor(private _tokenService: Angular2TokenService) { }
 
     // Submit Data to Backend
     onSubmit() {
 
-        this._output = null;
+        this.output = null;
 
-        this._tokenService.signIn(this._signInData).subscribe(
+        this._tokenService.signIn(this.signInData).subscribe(
             res => {
-                this._signInData    = <SignInData>{};
-                this._output        = res;
+                this.signInData     = <SignInData>{};
+                this.output         = res;
             }, error => {
-                this._signInData    = <SignInData>{};
-                this._output        = error;
+                this.signInData     = <SignInData>{};
+                this.output         = error;
             }
         );
     }

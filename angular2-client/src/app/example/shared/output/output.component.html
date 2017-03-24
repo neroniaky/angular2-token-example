@@ -2,13 +2,13 @@
     <h4 class="card-title">Response</h4>
     <p>
         <b>Status:</b>
-        <code>{{_output?.status}}</code>
+        <code>{{output?.status}}</code>
     </p>
-    <p *ngIf="_output?.data != null">
+    <p *ngIf="output?.data != null">
         <b>Data:</b>
-        <code>{{_output?.data | json}}</code>
+        <code>{{output?.data | json}}</code>
     <p>
-    <p *ngFor="let error of _output?.errors; let i = index">
+    <p *ngFor="let error of output?.errors; let i = index">
         <b>Error {{i + 1}}:</b>
         <code>{{error}}</code>
     </p>

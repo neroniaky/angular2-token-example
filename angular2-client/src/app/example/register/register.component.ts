@@ -8,23 +8,23 @@ import { Angular2TokenService, RegisterData } from 'angular2-token';
 })
 export class RegisterComponent {
 
-    private _registerData: RegisterData = <RegisterData>{};
-    private _output: any;
+    registerData: RegisterData = <RegisterData>{};
+    output: any;
 
     constructor(private _tokenService: Angular2TokenService) { }
 
     // Submit Data to Backend
     onSubmit() {
 
-        this._output = null;
+        this.output = null;
 
-        this._tokenService.registerAccount(this._registerData).subscribe(
+        this._tokenService.registerAccount(this.registerData).subscribe(
             res => {
-                this._registerData  = <RegisterData>{};
-                this._output        = res;
+                this.registerData  = <RegisterData>{};
+                this.output        = res;
             }, error => {
-                this._registerData  = <RegisterData>{};
-                this._output        = error;
+                this.registerData  = <RegisterData>{};
+                this.output        = error;
             }
         );
     }

@@ -9,10 +9,8 @@ import { Angular2TokenService } from 'angular2-token';
 })
 export class ExampleComponent {
 
-    private _showImprint: boolean = false;
-
-    constructor(private _tokenService: Angular2TokenService) {
-        this._tokenService.init();
+    constructor(public tokenService: Angular2TokenService) {
+        this.tokenService.init();
     }
 
 }

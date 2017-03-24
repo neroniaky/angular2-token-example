@@ -8,18 +8,18 @@ import { Angular2TokenService } from 'angular2-token';
 })
 export class SignOutComponent {
 
-    private _output: any;
+    output: any;
 
     constructor(private _tokenService: Angular2TokenService) { }
 
     // Submit Data to Backend
     onSubmit() {
 
-        this._output = null;
+        this.output = null;
 
         this._tokenService.signOut().subscribe(
-            res => this._output     = res,
-            error => this._output   = error
+            res => this.output      = res,
+            error => this.output    = error
         );
     }
 }

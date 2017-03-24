@@ -8,23 +8,23 @@ import { Angular2TokenService, UpdatePasswordData } from 'angular2-token';
 })
 export class ChangePasswordComponent {
 
-    private _updatePasswordData: UpdatePasswordData = <UpdatePasswordData>{};
-    private _output: any;
+    updatePasswordData: UpdatePasswordData = <UpdatePasswordData>{};
+    output:             any;
 
     constructor(private _tokenService: Angular2TokenService) { }
 
     // Submit Data to Backend
     onSubmit() {
 
-        this._output = null;
+        this.output = null;
 
-        this._tokenService.updatePassword(this._updatePasswordData).subscribe(
+        this._tokenService.updatePassword(this.updatePasswordData).subscribe(
             res => {
-                this._updatePasswordData    = <UpdatePasswordData>{};
-                this._output                = res;
+                this.updatePasswordData    = <UpdatePasswordData>{};
+                this.output                = res;
             }, error => {
-                this._updatePasswordData    = <UpdatePasswordData>{};
-                this._output                = error;
+                this.updatePasswordData    = <UpdatePasswordData>{};
+                this.output                = error;
             }
         );
     }

@@ -10,23 +10,23 @@ import { AuthResponse } from '../';
 })
 export class OutputComponent {
 
-    private _output: AuthResponse;
+    output: AuthResponse;
 
     @Input()
     set data(res: Response) {
 
-        this._output = <AuthResponse>{};
+        this.output = <AuthResponse>{};
 
         if (res != null) {
-            this._output.status = res.statusText + ' (' + res.status + ')';
+            this.output.status = res.statusText + ' (' + res.status + ')';
 
             if (res.json().errors != null)
                 if (res.json().errors.full_messages != null)
-                    this._output.errors = res.json().errors.full_messages;
+                    this.output.errors = res.json().errors.full_messages;
                 else
-                    this._output.errors = res.json().errors;
+                    this.output.errors = res.json().errors;
             else
-                this._output.data   = res.json().data;
+                this.output.data   = res.json().data;
         }
     }
 

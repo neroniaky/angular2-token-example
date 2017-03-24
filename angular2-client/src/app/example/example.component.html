@@ -7,13 +7,13 @@
 
                 <div class="row current-user">
                     <div class="col-md-4">
-                        <p><b>Signed In?</b> {{_tokenService.currentUserData != null}} </p>
+                        <p><b>Signed In?</b> {{tokenService.currentUserData != null}} </p>
                     </div>
                     <div class="col-md-4">
-                        <p><b>Email:</b> {{_tokenService.currentUserData?.email}} </p>
+                        <p><b>Email:</b> {{tokenService.currentUserData?.email}} </p>
                     </div>
                     <div class="col-md-4">
-                        <p><b>UserType:</b> {{_tokenService.currentUser}} </p>
+                        <p><b>UserType:</b> {{tokenService.currentUserType}} </p>
                     </div>
                 </div>
 
