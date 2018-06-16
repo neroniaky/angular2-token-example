@@ -3,13 +3,10 @@
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)
 
 ## About
-This an example for [Angular2-Token](https://github.com/neroniaky/angular2-token) a token based authentication service for Angular2 with multiple user support.
+This an example for [Angular2-Token](https://github.com/neroniaky/angular2-token) a token based authentication service for Angular with multiple user support.
 It uses a Rails 5.0 API backend with the [devise token auth](https://github.com/lynndylanhurley/devise_token_auth) gem.
 
 Angular2-Token is currently in Alpha. Any contribution is much appreciated.
-
-## Live Demo
-You can find a running example [here](https://angular2-token.herokuapp.com/).
 
 ## Content
 - [Requirements](#requirements)
