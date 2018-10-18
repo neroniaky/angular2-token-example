@@ -1,5 +1,9 @@
+
+:warning: This example has been intgerated into the [main repository](https://github.com/neroniaky/angular-token) :warning: 
+
+---
+
 # Angular2-Token
-[![Join the chat at https://gitter.im/lynndylanhurley/devise_token_auth](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angular2-token/Lobby)
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)
 
 ## About
